@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.netcosports.andipfl2.R;
+
 /**
  * Simple list-based Activity to redirect to one of the other Activities. The code here is
  * uninteresting, {@link SignInActivity} is a good place to start if you are curious about
@@ -24,7 +26,6 @@ public class ChooserActivity extends AppCompatActivity implements AdapterView.On
             SignInActivityWithDrive.class,
             IdTokenActivity.class,
             ServerAuthCodeActivity.class,
-            RestApiActivity.class,
     };
 
     private static final int[] DESCRIPTION_IDS = new int[] {
@@ -32,7 +33,6 @@ public class ChooserActivity extends AppCompatActivity implements AdapterView.On
             R.string.desc_sign_in_activity_scopes,
             R.string.desc_id_token_activity,
             R.string.desc_auth_code_activity,
-            R.string.desc_rest_activity,
     };
 
     @Override

@@ -18,6 +18,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.netcosports.andipfl2.R;
 
 /**
  * Demonstrates retrieving an ID token for the current Google user.
@@ -57,8 +58,7 @@ public class IdTokenActivity extends AppCompatActivity implements
         // profile (name, profile picture URL, etc) so you should not need to
         // make an additional call to personalize your application.
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.server_client_id))
-                .requestEmail()
+                .requestEmail().requestProfile().requestId().requestIdToken(getString(R.string.server_client_id))
                 .build();
         // [END configure_signin]
 

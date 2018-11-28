@@ -19,6 +19,7 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.netcosports.andipfl2.R;
 
 /**
  * Demonstrates retrieving an offline access one-time code for the current Google user, which
